@@ -40,10 +40,7 @@ def interactive_chat():
         "Tell me a joke"
     ]
     
-    for msg in messages:
-        print(f"\nUser: {msg}")
-        response = chat.send_message(msg)
-        print(f"AI: {response.text}")
+    
 
 if __name__ == "__main__":
     print("1. Simple Generation")
