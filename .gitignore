@@ -39,6 +39,9 @@ build/
 .coverage
 htmlcov/
 
+# Teaching materials (private)
+plan/
+
 # Data
 data/*.csv
 data/*.json
