@@ -6,14 +6,41 @@ Welcome to your journey into Generative AI with Python! This comprehensive guide
 
 ## 📚 Table of Contents
 
-1. [About This Course](#about-this-course)
-2. [Prerequisites](#prerequisites)
-3. [Learning Path Overview](#learning-path-overview)
-4. [Course Modules](#course-modules)
-5. [Setup Instructions](#setup-instructions)
-6. [How to Use This Repository](#how-to-use-this-repository)
-7. [Project Ideas](#project-ideas)
-8. [Additional Resources](#additional-resources)
+1. [Quick Start](#quick-start-start-here)
+2. [About This Course](#about-this-course)
+3. [Prerequisites](#prerequisites)
+4. [Learning Path Overview](#learning-path-overview)
+5. [Course Modules](#course-modules)
+6. [Setup Instructions](#setup-instructions)
+7. [How to Use This Repository](#how-to-use-this-repository)
+8. [Additional Resources](#additional-resources-cheat-sheets--exercises)
+9. [Project Ideas](#project-ideas)
+10. [Additional Learning Resources](#additional-learning-resources)
+
+---
+
+## 🚀 Quick Start (START HERE!)
+
+**Absolute Beginner? Start with these files:**
+
+### 1. **`00_START_HERE.py`** ⭐ READ THIS FIRST!
+Complete quick start guide with:
+- What is Python and Gen AI (explained simply)
+- Your complete learning roadmap
+- How to run the code files
+- Common beginner questions answered
+- Success tips and motivation
+
+**👉 Open this file and run it right now!**
+
+### 2. **`CHEAT_SHEET.md`** 📋 Keep This Handy!
+Quick reference with all Python syntax you'll need. Bookmark this for when you forget how to do something!
+
+### 3. **`COMMON_MISTAKES.py`** ⚠️ Avoid Frustration!
+Learn the 15 most common beginner mistakes BEFORE you make them. This will save you hours of debugging!
+
+### 4. **`EXERCISES.py`** 💪 Practice What You Learn!
+10 hands-on exercises to test your knowledge after completing the lessons.
 
 ---
 
@@ -361,26 +388,48 @@ In VS Code, install these extensions:
 
 ### For Absolute Beginners:
 
-1. **Start with Lesson 1** - Don't skip ahead!
-2. **Read the comments** - They explain what each line does
-3. **Run the code** - See the output for yourself
-4. **Modify the code** - Change values and see what happens
-5. **Break things** - It's okay! That's how you learn
-6. **Fix them** - Use the error messages to understand what went wrong
+1. **Start with `00_START_HERE.py`** - Your complete guide! Read and run this first
+2. **Keep `CHEAT_SHEET.md` open** - Reference it when you forget syntax
+3. **Read `COMMON_MISTAKES.py`** - Learn what NOT to do before you do it
+4. **Follow Lessons 01-10** - Don't skip ahead! Each builds on the last
+5. **Read the comments** - They explain what each line does
+6. **Run the code** - See the output for yourself
+7. **Modify the code** - Change values and see what happens
+8. **Break things** - It's okay! That's how you learn
+9. **Fix them** - Use the error messages to understand what went wrong
+10. **Complete `EXERCISES.py`** - Test your knowledge after each phase
 
 ### Learning Strategy:
 
 ```
-1. Read the file comments (explains concepts)
+1. Read 00_START_HERE.py (complete orientation)
    ↓
-2. Run the file (see it work)
+2. Read the lesson file comments (explains concepts)
    ↓
-3. Modify the code (experiment)
+3. Run the lesson file (see it work)
    ↓
-4. Complete the challenges (practice)
+4. Modify the code (experiment)
    ↓
-5. Move to next lesson
+5. Check CHEAT_SHEET.md if confused (quick reference)
+   ↓
+6. Complete exercises (practice)
+   ↓
+7. Move to next lesson
 ```
+
+### Course Files Overview:
+
+**Start Here:**
+- `00_START_HERE.py` - Your complete beginner's guide ⭐
+- `CHEAT_SHEET.md` - Quick syntax reference 📋
+- `COMMON_MISTAKES.py` - What to avoid ⚠️
+- `EXERCISES.py` - Practice problems 💪
+
+**Core Lessons (Follow in order):**
+- `01_hello_world.py` through `10_putting_it_together.py`
+
+**Reference:**
+- `README.md` - This detailed guide (you are here!)
 
 ### Practice Challenges (For Each Lesson):
 
@@ -403,6 +452,42 @@ Create a program that reads prompts from a file, processes them (with error hand
 
 **Lesson 10 Challenge:**
 Extend the PromptManager class to add a feature of your choice (e.g., prompt templates, favorites, search).
+
+---
+
+## 📚 Additional Resources (Cheat Sheets & Exercises)
+
+### Essential Reference Files
+
+#### **`CHEAT_SHEET.md`** - Your Python Quick Reference
+A comprehensive cheat sheet covering:
+- ✅ All Python syntax in one place
+- ✅ String operations, lists, dictionaries
+- ✅ Functions, loops, conditionals
+- ✅ File operations and JSON
+- ✅ Gen AI specific patterns
+- ✅ Common built-in functions
+- ✅ VS Code keyboard shortcuts
+
+**Use this when:** You forget syntax or need a quick reminder
+
+#### **`EXERCISES.py`** - Practice Problems
+10 hands-on exercises to reinforce learning:
+- 🟢 Beginner (After Lessons 1-4)
+- 🟡 Intermediate (After Lessons 5-7)
+- 🔴 Advanced (After Lessons 8-10)
+
+Complete these after finishing the lessons to test your understanding!
+
+#### **`COMMON_MISTAKES.py`** - Error Prevention Guide
+Learn from others' mistakes:
+- ⚠️ 15 most common beginner errors
+- ✅ Shows wrong vs. right way
+- 💡 Explains WHY it's wrong
+- 🔧 How to fix each issue
+- 🎯 Saves hours of debugging
+
+**Run this file** to see examples of what NOT to do!
 
 ---
 
@@ -508,7 +593,7 @@ Once you master these fundamentals, you'll be ready for:
 
 ---
 
-## 📚 Additional Resources
+## 📚 Additional Learning Resources
 
 ### Official Documentation:
 - **Python Official Docs**: [docs.python.org](https://docs.python.org/3/)
