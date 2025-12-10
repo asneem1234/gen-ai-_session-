@@ -12,7 +12,7 @@ def setup_environment():
     return api_key
 
 def test_model():
-    model = genai.GenerativeModel('gemini-2.0-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash-lite')
     response = model.generate_content("Say hello!")
     print(f"Response: {response.text}")
 

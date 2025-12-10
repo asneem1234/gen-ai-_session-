@@ -54,7 +54,7 @@ import google.generativeai as genai
 import os
 
 genai.configure(api_key=os.environ.get('GOOGLE_API_KEY'))
-model = genai.GenerativeModel('gemini-2.0-flash-exp')
+model = genai.GenerativeModel('gemini-2.0-flash')
 response = model.generate_content("Say hello!")
 print(response.text)
 ```
@@ -69,7 +69,7 @@ print(response.text)
 
 | Model Name | Status | Description |
 |------------|--------|-------------|
-| **gemini-2.0-flash-exp** | 🟢 Latest | Fastest, experimental, cutting-edge features |
+| **gemini-2.0-flash** | 🟢 Latest | Fastest, stable, cutting-edge features |
 | **gemini-1.5-flash** | 🟢 Stable | Fast, efficient, production-ready |
 | **gemini-1.5-flash-8b** | 🟢 Stable | Lightweight, cost-effective |
 | **gemini-1.5-pro** | 🟢 Stable | Most capable, highest quality |
@@ -82,7 +82,7 @@ print(response.text)
 
 ### Quick Comparison
 
-| Feature | gemini-2.0-flash-exp | gemini-1.5-flash | gemini-1.5-flash-8b | gemini-1.5-pro |
+| Feature | gemini-2.0-flash | gemini-1.5-flash | gemini-1.5-flash-8b | gemini-1.5-pro |
 |---------|---------------------|------------------|---------------------|----------------|
 | **Speed** | ⚡⚡⚡ Fastest | ⚡⚡ Fast | ⚡⚡⚡ Very Fast | ⚡ Moderate |
 | **Quality** | 🌟🌟🌟🌟 Excellent | 🌟🌟🌟 Good | 🌟🌟 Decent | 🌟🌟🌟🌟🌟 Best |
@@ -90,24 +90,24 @@ print(response.text)
 | **Context Window** | 1M tokens | 1M tokens | 1M tokens | 2M tokens |
 | **Best For** | Experiments | Production | High-volume | Complex tasks |
 | **Multimodal** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
-| **Stability** | 🧪 Experimental | ✅ Stable | ✅ Stable | ✅ Stable |
+| **Stability** | ✅ Stable | ✅ Stable | ✅ Stable | ✅ Stable |
 
 ### Detailed Comparison
 
-#### 🚀 **gemini-2.0-flash-exp** (Recommended for this course)
-- **Latest experimental model** with cutting-edge features
+#### 🚀 **gemini-2.0-flash** (Recommended for this course)
+- **Latest stable model** with cutting-edge features
 - **Fastest response times** - Great for interactive apps
 - **Excellent quality** - Nearly matches Pro performance
 - **Free tier friendly** - Lower cost than Pro
 - **Multimodal** - Handles text, images, video, audio
-- **⚠️ Note**: "exp" means experimental - API may change
+- **Production-ready** - Stable API and consistent performance
 
 **Use When:**
 - ✅ Learning and experimenting
-- ✅ Building prototypes
+- ✅ Building prototypes and production apps
 - ✅ Need fast responses
 - ✅ Want latest features
-- ❌ Avoid for: Critical production apps (use stable versions)
+- ✅ Production-ready applications
 
 #### ⚡ **gemini-1.5-flash** (Best for Production)
 - **Production-ready** and stable
@@ -161,7 +161,7 @@ print(response.text)
 START: What's your use case?
 │
 ├─ 🧪 Learning/Experimenting?
-│  └─ ✅ Use: gemini-2.0-flash-exp
+│  └─ ✅ Use: gemini-2.0-flash
 │
 ├─ 🚀 Production app?
 │  │
@@ -182,7 +182,7 @@ START: What's your use case?
 
 | Use Case | Recommended Model | Why? |
 |----------|------------------|------|
-| **Learning AI** | gemini-2.0-flash-exp | Latest features, fast, great for tutorials |
+| **Learning AI** | gemini-2.0-flash | Latest features, fast, great for tutorials |
 | **Chatbot (simple)** | gemini-1.5-flash-8b | Cost-effective, fast enough |
 | **Chatbot (advanced)** | gemini-1.5-flash | Good balance, reliable |
 | **Code Generation** | gemini-1.5-pro | Best reasoning, complex logic |
@@ -224,14 +224,14 @@ START: What's your use case?
 
 | Model | Simple Query | Complex Query | With Images | With Long Context |
 |-------|-------------|---------------|-------------|-------------------|
-| gemini-2.0-flash-exp | 0.5s | 1.2s | 1.5s | 2.5s |
+| gemini-2.0-flash | 0.5s | 1.2s | 1.5s | 2.5s |
 | gemini-1.5-flash | 0.6s | 1.5s | 1.8s | 3.0s |
 | gemini-1.5-flash-8b | 0.4s | 1.0s | 1.3s | 2.2s |
 | gemini-1.5-pro | 1.2s | 3.5s | 4.0s | 6.0s |
 
 ### Quality Scores (Higher is better)
 
-| Benchmark | Flash-8B | Flash | Flash-Exp 2.0 | Pro |
+| Benchmark | Flash-8B | Flash | Flash 2.0 | Pro |
 |-----------|----------|-------|---------------|-----|
 | MMLU (Knowledge) | 68% | 78% | 82% | 85% |
 | HumanEval (Code) | 55% | 72% | 78% | 84% |
@@ -246,7 +246,7 @@ START: What's your use case?
 |-------|-----------------|
 | gemini-1.5-flash-8b | Most queries per $ |
 | gemini-1.5-flash | Good value |
-| gemini-2.0-flash-exp | Good value |
+| gemini-2.0-flash | Good value |
 | gemini-1.5-pro | Premium pricing |
 
 ---
@@ -282,7 +282,7 @@ You'll need to upgrade when:
 |-------|-----------|-----------|------------------|
 | gemini-1.5-flash-8b | 15 | 2000 | 4M |
 | gemini-1.5-flash | 15 | 2000 | 4M |
-| gemini-2.0-flash-exp | 15 | 1000 | 4M |
+| gemini-2.0-flash | 15 | 1000 | 4M |
 | gemini-1.5-pro | 2 | 360 | 4M |
 
 **RPM** = Requests Per Minute  
@@ -316,8 +316,8 @@ def generate_with_retry(model, prompt):
 
 ## 🎓 Best Practices
 
-### 1. **Start with gemini-2.0-flash-exp**
-For this course, we use `gemini-2.0-flash-exp` because:
+### 1. **Start with gemini-2.0-flash**
+For this course, we use `gemini-2.0-flash` because:
 - ✅ Latest features
 - ✅ Fast responses (good for learning)
 - ✅ Free tier friendly
@@ -331,7 +331,7 @@ def get_model(complexity="medium"):
         "simple": "gemini-1.5-flash-8b",
         "medium": "gemini-1.5-flash",
         "complex": "gemini-1.5-pro",
-        "experimental": "gemini-2.0-flash-exp"
+        "latest": "gemini-2.0-flash"
     }
     return genai.GenerativeModel(models[complexity])
 
@@ -371,7 +371,7 @@ def compare_models(prompt):
     models = [
         "gemini-1.5-flash-8b",
         "gemini-1.5-flash", 
-        "gemini-2.0-flash-exp",
+        "gemini-2.0-flash",
         "gemini-1.5-pro"
     ]
     
@@ -437,7 +437,7 @@ def smart_model_selection(task_complexity, user_tier):
             "gemini-1.5-flash",
             "gemini-1.5-flash",
             "gemini-1.5-flash",
-            "gemini-2.0-flash-exp"
+            "gemini-2.0-flash"
         ])
     
     else:  # complex
@@ -463,7 +463,7 @@ load_dotenv()
 genai.configure(api_key=os.environ.get('GOOGLE_API_KEY'))
 
 # Use this model for all lessons
-model = genai.GenerativeModel('gemini-2.0-flash-exp')
+model = genai.GenerativeModel('gemini-2.0-flash')
 
 # Test it
 response = model.generate_content("Hello! Introduce yourself.")
@@ -477,7 +477,7 @@ print(response.text)
 models_to_try = [
     "gemini-1.5-flash-8b",
     "gemini-1.5-flash",
-    "gemini-2.0-flash-exp",
+    "gemini-2.0-flash",
     "gemini-1.5-pro"
 ]
 
@@ -516,7 +516,7 @@ for model_name in models_to_try:
 ## ❓ FAQ
 
 ### Q: Which model should I use for this course?
-**A:** Use `gemini-2.0-flash-exp` - it's fast, capable, and perfect for learning.
+**A:** Use `gemini-2.0-flash` - it's fast, capable, stable, and perfect for learning.
 
 ### Q: Can I change models mid-project?
 **A:** Yes! Just change the model name in `GenerativeModel()`. Your code stays the same.
