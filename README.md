@@ -2,6 +2,16 @@
 
 > A complete, hands-on guide to building AI applications with Google's Gemini API
 
+### 🆕 **What's New**
+
+#### December 11, 2025
+- ✨ Added `MODEL_SELECTION.md` - Complete guide to free-tier models, pricing, and rate limits
+- 🚀 Updated default model to `gemini-2.5-flash-lite` (best free-tier performance)
+- 📊 Added detailed explanations of RPM, RPD, TPM, and quota limits
+- 💡 Included model recommendations by use case (chat, coding, RAG, etc.)
+
+---
+
 ## 📖 What You'll Find Here
 
 This repository contains **10 progressive AI lessons** plus a complete **Python fundamentals course**. Each AI lesson includes:
@@ -147,6 +157,7 @@ gen-ai-_session-/
 ├── 📄 README.md                           # 👈 You are here!
 ├── 📄 QUICKSTART.md                       # 5-minute setup guide
 ├── 📄 GEMINI_API_GUIDE.md                 # Complete API key & model guide
+├── 📄 MODEL_SELECTION.md                  # 🆕 Free models, pricing & rate limits guide
 ├── 📄 requirements.txt                    # All Python dependencies
 ├── 📄 .env.example                        # Template for your API key
 │
@@ -239,6 +250,7 @@ gen-ai-_session-/
 ### 📚 **Learning Resources Quick Links**
 - **Setup Help**: `QUICKSTART.md`
 - **API Key Guide**: `GEMINI_API_GUIDE.md`
+- **Model Selection & Pricing**: `MODEL_SELECTION.md` 🆕
 - **Python Help**: `Python basics/README.md`
 - **VS Code Setup**: `vs code documentation/getting-started-for-beginners.md`
 - **Python Cheat Sheet**: `Python basics/CHEAT_SHEET.md`
@@ -301,6 +313,7 @@ gen-ai-_session-/
 - 🔑 [Get Free Gemini API Key](https://aistudio.google.com/app/apikey)
 - 📖 [Official Gemini API Docs](https://ai.google.dev/docs)
 - 🐍 [Python SDK Reference](https://github.com/google/generative-ai-python)
+- 💰 [Pricing & Free Tier Models](MODEL_SELECTION.md) 🆕
 
 ### Advanced Topics:
 - 🗄️ [Pinecone Vector Database](https://docs.pinecone.io/) (for lesson 10)
@@ -320,9 +333,10 @@ gen-ai-_session-/
 |---------|----------|
 | ❌ "API key not found" | Create `.env` file with `GOOGLE_API_KEY=your_key_here` |
 | ❌ "Module not found" | Run `pip install -r requirements.txt` |
-| ❌ "Rate limit exceeded" | Add `time.sleep(1)` between requests |
+| ❌ "Rate limit exceeded" | Check `MODEL_SELECTION.md` for free-tier models and limits |
 | ❌ Python not found | Install Python 3.8+ from [python.org](https://python.org) |
 | ❌ Notebook won't run in Colab | Set API key in notebook, restart runtime |
+| ❌ "Quota exceeded 429" | Switch to `gemini-2.5-flash-lite` or wait for rate limit reset |
 
 **Need more help?** Check `QUICKSTART.md` for detailed troubleshooting!
 
@@ -400,7 +414,7 @@ Optional: Lessons 6, 7, 8 (for chat + control)
 - ☁️ Cloud deployment (Google Cloud, AWS, Azure)
 - 🔄 Advanced RAG (hybrid search, reranking, multi-query)
 - 🛡️ Safety, content filtering, and moderation
-- 💰 Cost optimization and caching strategies
+- 💰 Cost optimization and caching strategies (see `MODEL_SELECTION.md`)
 - 📊 Logging, monitoring, and analytics
 
 ### 🤖 Other AI Platforms:
